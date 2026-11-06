@@ -1,0 +1,16 @@
+"""
+Create and work with a Pandas Series
+
+Python lab experiment.
+Run: python 01_create_pandas_series.py
+"""
+import pandas as pd
+
+
+data = [10, 20, 30]
+labels = ["a", "b", "c"]
+series = pd.Series(data, index=labels)
+
+print("Pandas Series:")
+print(series)
+print("Value at label 'b':", series["b"])
